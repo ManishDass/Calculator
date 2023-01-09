@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useReducer, useEffect } from 'react'
 import style from '../style/Number.module.css';
 import deleteIcon from '../assets/delete.svg'
 
@@ -94,6 +94,10 @@ const reduce = (state, { type, payload }) => {
 }
 
 const NumberCalculator = () => {
+  useEffect(()=>{
+    document.title = "Calculator - Number"
+  },[])
+
   const [{ previousOperend, operation, currentOperend }, dispatch] = useReducer(reduce, initialState)
   return (
     <div>

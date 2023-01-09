@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Sidebar from './Sidebar'
 
 const TemperatureCalculator = () => {
+  useEffect(()=>{
+    document.title = "Calculator - Temperature"
+  },[])
+  
   return (
     <div>
         <Sidebar/>
