@@ -4,7 +4,7 @@
 
 A complete Calculator application with all features.
 
-**live demo: [https://Calculator.vercel.app/](https://calculator-one-pi.vercel.app/)**
+**live demo: [https://Calculator.vercel.app/](https://calculator-delta-henna.vercel.app/)**
 
 
 ---
