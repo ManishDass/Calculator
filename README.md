@@ -1,10 +1,40 @@
-# Getting Started with Create React App
+![React Calculator App](./public/images/banner.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#React Calculator App.
 
-## Available Scripts
+A complete Calculator application with all features.
 
-In the project directory, you can run:
+**live demo: [https://Calculator.vercel.app/](https://calculator-one-pi.vercel.app/)**
+
+
+---
+
+### Made with ❤️ by [Manish Das](https://www.instagram.com/__manish_das__/)
+
+
+
+## Tools Used
+
+1. Code Editor: [VS Code](https://code.visualstudio.com/)
+1. Figma: [VS Code](https://www.figma.com/)
+
+---
+
+## FAQ
+
+---
+
+## Feedback
+
+If you have any feedback, please reach out to me at [@__manish_das__](https://instagram.com/__manish_das__)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Happy Coding! 🚀
+
 
 ### `npm start`
 
