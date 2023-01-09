@@ -20,13 +20,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.main-wrapper {
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  display: grid;
-  grid-template: 
-  "aside section" 1fr / 40vh 1fr;
+@media screen and (max-width: 767px) {
+  .main-wrapper {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "section" 100vh
+    "aside" 1fr / 1fr;
+  }
 }
 
 .sidebar {
@@ -37,4 +40,17 @@ height: 100vh;
 
 .NumberCalculator {
 grid-area: section;
+}
+
+
+@media screen and (min-width: 768px)
+{
+.main-wrapper {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: grid;
+  grid-template: 
+  "aside section" 1fr / 40vh 1fr;
+}
 }
