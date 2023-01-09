@@ -1,0 +1,120 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.typeWrapper {
+    display: grid;
+    grid-template: 
+    "one one"
+    "two two"
+    "three four"
+    "five six"
+    "seven eight"
+    "nine ten"
+    "eleven eleven"
+    "twelve twelve";
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.calTitle
+{
+    grid-area: one;
+}
+
+.calInfo
+{
+    grid-area: two;  
+}
+
+.typeWrapper button:nth-child(3)
+{
+    grid-area: three; 
+}
+
+.typeWrapper button:nth-child(4)
+{
+    grid-area: four;
+}
+
+.typeWrapper button:nth-child(5)
+{
+    grid-area: five;
+}
+
+.typeWrapper button:nth-child(6)
+{
+    grid-area: six; 
+}
+
+.typeWrapper button:nth-child(7)
+{
+    grid-area: seven;
+}
+
+.typeWrapper button:nth-child(8)
+{
+    grid-area: eight;
+}
+
+.typeWrapper button:nth-child(9)
+{
+    grid-area: nine;
+}
+
+.typeWrapper button:nth-child(10)
+{
+    grid-area: ten;
+}
+
+.helpText 
+{
+    grid-area: eleven;
+}
+
+.creditText
+{
+    grid-area: twelve;
+}
+
+.typeWrapper button {
+    background-color: #151E2B;
+    color: white;
+    border: none;
+    height: 75px;
+    width: 75px;
+}
+
+.typeWrapper button:hover {
+    background-color: #6C63FF;
+}
+
+.typeWrapper button:active {
+    background-color: #6b63ff8c;
+}
+
+/* To make click effect smooth */
+.typeWrapper button:not(:active) {
+    transition: all .2s linear;
+}
+
+.typeWrapper button p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.icon {
+    /* to get desired color https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(100%) sepia(44%) saturate(75%) hue-rotate(14deg) brightness(117%) contrast(84%); 
+}
+
+.creditText {
+    margin-top: -30px;
+    font-size: 0.7rem;
+}
+

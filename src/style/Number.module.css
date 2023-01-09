@@ -1,0 +1,198 @@
+.numberWrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template:
+        "zero zero zero zero"
+        "a b c d"
+        "e f g h"
+        "i j k l"
+        "m n o p"
+        "q q r s";
+    grid-gap: 10px;
+}
+
+input[type='button'],
+.b {
+    border: none;
+    height: 75px;
+    width: 75px;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: #364358;
+    color: #EAEAEA;
+}
+
+input[type='button']:hover {
+    background-color: #6C63FF;
+}
+
+input[type='button']:active {
+    background-color: #6b63ff8c;
+    font-size: 1.6rem;
+}
+
+/* To make click effect smooth */
+input[type='button']:not(:active) {
+    transition: all .2s linear;
+}
+
+.a {
+    grid-area: a;
+    background-color: #E6683D !important;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+}
+
+
+.a:hover {
+    background-color: #ff4000  !important;
+}
+
+.a:active {
+    background-color: #7d402c !important;
+    font-size: 1.6rem !important;
+}
+
+/* To make click effect smooth */
+.a:not(:active) {
+    transition: all .2s linear;
+}
+
+
+.b {
+    grid-area: b;
+    font-weight: 400 !important;
+}
+
+.b:hover {
+    background-color: #6C63FF;
+}
+
+.b:active {
+    background-color: #6b63ff8c;
+}
+
+/* To make click effect smooth */
+.b:not(:active) {
+    transition: all .2s linear;
+}
+
+
+
+.c {
+    grid-area: c;
+    font-weight: 400 !important;
+}
+
+.d {
+    grid-area: d;
+    font-weight: 400 !important;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+    font-weight: 400 !important;
+}
+
+.i {
+    grid-area: i;
+}
+
+.j {
+    grid-area: j;
+}
+
+.k {
+    grid-area: k;
+}
+
+.l {
+    grid-area: l;
+    font-weight: 400 !important;
+}
+
+.m {
+    grid-area: m;
+}
+
+.n {
+    grid-area: n;
+}
+
+.o {
+    grid-area: o;
+}
+
+.p {
+    grid-area: p;
+    font-weight: 400 !important;
+}
+
+.q {
+    grid-area: q;
+    min-width: 100%;
+}
+
+.r {
+    grid-area: r;
+}
+
+.s {
+    grid-area: s;
+    font-weight: 400 !important;
+}
+
+.inputOutput {
+    margin: 0;
+    grid-area: zero;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: 3rem;
+}
+
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+
+::placeholder {
+    color: #EAEAEA;
+}
+
+/* hide incremnet decremnt */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.icon {
+    /* to get desired color https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(100%) sepia(44%) saturate(75%) hue-rotate(14deg) brightness(117%) contrast(84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 95%;
+}

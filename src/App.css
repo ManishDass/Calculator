@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap');
+
+html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  background-color: #1E293A;
+  color: #EAEAEA;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-wrapper {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  display: grid;
+  grid-template: 
+  "aside section" 1fr / 40vh 1fr;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+grid-area: aside;
+background-color: #0E1722;
+height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NumberCalculator {
+grid-area: section;
 }

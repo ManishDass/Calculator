@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import NumberCalculator from './components/NumberCalculator';
+import Sidebar from './components/Sidebar';
+import { Routes, Route } from 'react-router-dom'
+import CurrencyCalculator from './components/CurrencyCalculator';
+import TemperatureCalculator from './components/TemperatureCalculator';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={
+          <main className='main-wrapper'>
+            <aside className='sidebar'> <Sidebar /> </aside>
+            <section className='NumberCalculator'> <NumberCalculator />  </section>
+          </main>
+        }></Route>
+        <Route path='/currency' element={<CurrencyCalculator/>}/>
+        <Route path='/temperature' element={<TemperatureCalculator/>}/>
+      </Routes>
     </div>
   );
 }
